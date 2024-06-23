@@ -36,7 +36,7 @@ Toolbars:
 Visualization Manager:
   Class: ""
   Displays:
-    - Alpha: 0.5
+    - alpha: 0.5
       Cell Size: 1
       Class: rviz/Grid
       Color: 160; 160; 164
@@ -54,58 +54,58 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 1
+    - alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
       Enabled: true
       Links:
         2dofknuckle_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         2dofknuckle_link_10:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         2dofknuckle_link_2:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         2dofknuckle_link_3:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         2dofknuckle_link_4:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         2dofknuckle_link_5:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         2dofknuckle_link_6:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         2dofknuckle_link_7:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         2dofknuckle_link_8:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         2dofknuckle_link_9:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
@@ -115,222 +115,222 @@ Visualization Manager:
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
         base_link:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         bucket_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         face_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         facebracket_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         hcsr04_cans_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         hcsr04_chips_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         hcsr04_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         leg_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         leg_link_2:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         leg_link_3:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         leg_link_4:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         lipo_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mg90_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mg90_link_10:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mg90_link_2:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mg90_link_3:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mg90_link_4:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mg90_link_5:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mg90_link_6:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mg90_link_7:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mg90_link_8:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mg90_link_9:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mpu9250_cap_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mpu9250_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         mpu9250_mpu_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         pizerow_cam_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         pizerow_con_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         pizerow_cpu_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         pizerow_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         raspicam_cam_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         raspicam_chips_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         raspicam_con_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         raspicam_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         servobottom_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         servobottom_link_10:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         servobottom_link_2:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         servobottom_link_3:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         servobottom_link_4:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         servobottom_link_5:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         servobottom_link_6:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         servobottom_link_7:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         servobottom_link_8:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         servobottom_link_9:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
         shell_link_1:
-          Alpha: 1
+          alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
