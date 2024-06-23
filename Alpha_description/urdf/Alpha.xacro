@@ -193,6 +193,27 @@
   </collision>
 </link>
 
+<link name="depth_camera_1">
+  <inertial>
+    <origin xyz="1.065498605964156e-13 0.019926811994094296 0.014499999999999943" rpy="0 0 0"/>
+    <mass value="0.05573270671530081"/>
+    <inertia ixx="6e-06" iyy="3.6e-05" izz="3.7e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.144399 -0.09" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/depth_camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.144399 -0.09" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/depth_camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="base_link_to_wheel_clamp_1" type="fixed">
   <origin xyz="0.115 -0.134 0.06" rpy="0 0 0"/>
   <parent link="base_link"/>
@@ -243,6 +264,12 @@
   <parent link="wheel_clamp_4_1"/>
   <child link="wheel_4_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="base_link_to_depth_camera" type="fixed">
+  <origin xyz="0.0 0.144399 0.09" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="depth_camera_1"/>
 </joint>
 
 </robot>
