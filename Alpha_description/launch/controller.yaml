@@ -1,0 +1,23 @@
+Alpha_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  wheel_clamp_1_to_wheel_1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: wheel_clamp_1_to_wheel_1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  wheel_clamp_2_to_wheel_2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: wheel_clamp_2_to_wheel_2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  wheel_clamp_3_to_wheel_3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: wheel_clamp_3_to_wheel_3
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  wheel_clamp_4_to_wheel_4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: wheel_clamp_4_to_wheel_4
+    pid: {p: 100.0, i: 0.01, d: 10.0}

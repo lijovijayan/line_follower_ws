@@ -1,0 +1,248 @@
+<?xml version="1.0" ?>
+<robot name="Alpha" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Alpha_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Alpha_description)/urdf/Alpha.trans" />
+<xacro:include filename="$(find Alpha_description)/urdf/Alpha.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-1.0547369564692681e-07 0.004021237681352332 0.0412312225257285" rpy="0 0 0"/>
+    <mass value="8.373395552650207"/>
+    <inertia ixx="0.115141" iyy="0.045372" izz="0.151049" ixy="0.0" iyz="-0.001432" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_clamp_1_1">
+  <inertial>
+    <origin xyz="0.012113735177594578 8.326672684688674e-17 -0.05658547062161276" rpy="0 0 0"/>
+    <mass value="0.20106912783751324"/>
+    <inertia ixx="0.000287" iyy="0.000223" izz="8.4e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.115 0.134 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_clamp_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.115 0.134 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_clamp_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_1_1">
+  <inertial>
+    <origin xyz="-0.06940433730274503 0.13399998634297935 2.287040556936404e-09" rpy="0 0 0"/>
+    <mass value="0.2827149727810706"/>
+    <inertia ixx="0.000365" iyy="0.000217" izz="0.000217" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.23 0.268 0.025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.23 0.268 0.025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_clamp_2_1">
+  <inertial>
+    <origin xyz="0.012113735177594606 -8.326672684688674e-17 -0.05658547062161277" rpy="0 0 0"/>
+    <mass value="0.20106912783751324"/>
+    <inertia ixx="0.000287" iyy="0.000223" izz="8.4e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.115 -0.134 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_clamp_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.115 -0.134 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_clamp_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_2_1">
+  <inertial>
+    <origin xyz="-0.06940433730274503 -0.1340000043103451 -1.3159243795329845e-08" rpy="0 0 0"/>
+    <mass value="0.2827149727810706"/>
+    <inertia ixx="0.000365" iyy="0.000217" izz="0.000217" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.23 -0.268 0.025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.23 -0.268 0.025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_clamp_3_1">
+  <inertial>
+    <origin xyz="-0.012113735177594578 8.326672684688674e-17 -0.05658547062161275" rpy="0 0 0"/>
+    <mass value="0.20106912783751324"/>
+    <inertia ixx="0.000287" iyy="0.000223" izz="8.4e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.115 0.134 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_clamp_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.115 0.134 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_clamp_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_clamp_4_1">
+  <inertial>
+    <origin xyz="-0.01211373517759455 -8.326672684688674e-17 -0.056585470621612774" rpy="0 0 0"/>
+    <mass value="0.20106912783751324"/>
+    <inertia ixx="0.000287" iyy="0.000223" izz="8.4e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.115 -0.134 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_clamp_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.115 -0.134 -0.06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_clamp_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_3_1">
+  <inertial>
+    <origin xyz="-0.16059566269725498 -0.1339999864936054 -3.053203457420439e-09" rpy="0 0 0"/>
+    <mass value="0.2827149727810706"/>
+    <inertia ixx="0.000365" iyy="0.000217" izz="0.000217" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_4_1">
+  <inertial>
+    <origin xyz="-0.16059566269725495 0.1339999864272803 -2.743365253715657e-09" rpy="0 0 0"/>
+    <mass value="0.2827149727810706"/>
+    <inertia ixx="0.000365" iyy="0.000217" izz="0.000217" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Alpha_description/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="base_link_to_wheel_clamp_1" type="fixed">
+  <origin xyz="0.115 -0.134 0.06" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_clamp_1_1"/>
+</joint>
+
+<joint name="wheel_clamp_1_to_wheel_1" type="continuous">
+  <origin xyz="0.115 -0.134 -0.085" rpy="0 0 0"/>
+  <parent link="wheel_clamp_1_1"/>
+  <child link="wheel_1_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="base_link_to_wheel_clamp_2" type="fixed">
+  <origin xyz="0.115 0.134 0.06" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_clamp_2_1"/>
+</joint>
+
+<joint name="wheel_clamp_2_to_wheel_2" type="continuous">
+  <origin xyz="0.115 0.134 -0.085" rpy="0 0 0"/>
+  <parent link="wheel_clamp_2_1"/>
+  <child link="wheel_2_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="base_link_to_wheel_clamp_3" type="fixed">
+  <origin xyz="-0.115 -0.134 0.06" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_clamp_3_1"/>
+</joint>
+
+<joint name="base_link_to_wheel_clamp_4" type="fixed">
+  <origin xyz="-0.115 0.134 0.06" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_clamp_4_1"/>
+</joint>
+
+<joint name="wheel_clamp_3_to_wheel_3" type="continuous">
+  <origin xyz="0.115 0.134 -0.085" rpy="0 0 0"/>
+  <parent link="wheel_clamp_3_1"/>
+  <child link="wheel_3_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="wheel_clamp_4_to_wheel_4" type="continuous">
+  <origin xyz="0.115 -0.134 -0.085" rpy="0 0 0"/>
+  <parent link="wheel_clamp_4_1"/>
+  <child link="wheel_4_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+</robot>
