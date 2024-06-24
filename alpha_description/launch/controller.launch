@@ -1,9 +1,0 @@
-<launch>
-
-<rosparam file="$(find alpha_description)/launch/controller.yaml" command="load"/>
-<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="alpha" args="wheel_clamp_1_to_wheel_1_position_controller wheel_clamp_2_to_wheel_2_position_controller wheel_clamp_3_to_wheel_3_position_controller wheel_clamp_4_to_wheel_4_position_controller joint_state_controller "/>
-<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
-  <remap from="/joint_states" to="/alpha/joint_states"/>
-</node>
-
-</launch>
