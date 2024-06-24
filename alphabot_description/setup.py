@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'alphabot_description'
+package_name = 'atom_description'
 
 setup(
     name=package_name,
