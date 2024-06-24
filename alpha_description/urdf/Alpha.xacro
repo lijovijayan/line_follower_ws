@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
-<robot name="Alpha" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="alpha" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find Alpha_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find Alpha_description)/urdf/Alpha.trans" />
-<xacro:include filename="$(find Alpha_description)/urdf/Alpha.gazebo" />
+<xacro:include filename="$(find alpha_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find alpha_description)/urdf/alpha.trans" />
+<xacro:include filename="$(find alpha_description)/urdf/alpha.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="-1.0547369564692681e-07 0.004021237681352332 0.0412312225257285" rpy="0 0 0"/>
@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="-0.115 0.134 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_clamp_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_clamp_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.115 0.134 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_clamp_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_clamp_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="-0.23 0.268 0.025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.23 0.268 0.025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="-0.115 -0.134 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_clamp_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_clamp_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.115 -0.134 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_clamp_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_clamp_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-0.23 -0.268 0.025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.23 -0.268 0.025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="0.115 0.134 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_clamp_3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_clamp_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.115 0.134 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_clamp_3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_clamp_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="0.115 -0.134 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_clamp_4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_clamp_4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.115 -0.134 -0.06" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_clamp_4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_clamp_4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +202,14 @@
   <visual>
     <origin xyz="-0.0 -0.144399 -0.09" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/depth_camera_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/depth_camera_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 -0.144399 -0.09" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://Alpha_description/meshes/depth_camera_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://alpha_description/meshes/depth_camera_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
