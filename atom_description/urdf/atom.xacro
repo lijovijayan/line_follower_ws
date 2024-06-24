@@ -48,19 +48,19 @@
 
 <link name="wheel_1_1">
   <inertial>
-    <origin xyz="-0.06940433730274503 0.13399998634297935 2.287040556936404e-09" rpy="0 0 0"/>
+    <origin xyz="0.01859566269725499 -1.3657020569990408e-08 2.287040556936404e-09" rpy="0 0 0"/>
     <mass value="0.2827149727810706"/>
     <inertia ixx="0.000365" iyy="0.000217" izz="0.000217" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.23 0.268 0.025" rpy="0 0 0"/>
+    <origin xyz="-0.14 0.134 0.025" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.23 0.268 0.025" rpy="0 0 0"/>
+    <origin xyz="-0.14 0.134 0.025" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -90,19 +90,19 @@
 
 <link name="wheel_2_1">
   <inertial>
-    <origin xyz="-0.06940433730274503 -0.1340000043103451 -1.3159243795329845e-08" rpy="0 0 0"/>
+    <origin xyz="0.01859566269725499 -4.3103450531045695e-09 -1.3159243784921504e-08" rpy="0 0 0"/>
     <mass value="0.2827149727810706"/>
     <inertia ixx="0.000365" iyy="0.000217" izz="0.000217" ixy="0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.23 -0.268 0.025" rpy="0 0 0"/>
+    <origin xyz="-0.14 -0.134 0.025" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.23 -0.268 0.025" rpy="0 0 0"/>
+    <origin xyz="-0.14 -0.134 0.025" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -153,19 +153,19 @@
 
 <link name="wheel_3_1">
   <inertial>
-    <origin xyz="-0.16059566269725498 -0.13400001370069212 2.0089295296732423e-09" rpy="0 0 0"/>
+    <origin xyz="-0.01859566269725496 -1.3812480492703116e-08 -9.798722146181493e-10" rpy="0 0 0"/>
     <mass value="0.2827149727810706"/>
-    <inertia ixx="0.000365" iyy="0.000217" izz="0.000217" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+    <inertia ixx="0.000365" iyy="0.000217" izz="0.000217" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
+    <origin xyz="0.14 0.134 0.025" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
+    <origin xyz="0.14 0.134 0.025" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -174,19 +174,19 @@
 
 <link name="wheel_4_1">
   <inertial>
-    <origin xyz="-0.1605956626972549 0.1339999861528064 4.9019815984152615e-14" rpy="0 0 0"/>
+    <origin xyz="-0.018595662697254906 -1.3847193641725042e-08 4.9384107914107744e-14" rpy="0 0 0"/>
     <mass value="0.2827149727810706"/>
     <inertia ixx="0.000365" iyy="0.000217" izz="0.000217" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
+    <origin xyz="0.14 -0.134 0.025" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.0 -0.0 0.025" rpy="0 0 0"/>
+    <origin xyz="0.14 -0.134 0.025" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -221,7 +221,7 @@
 </joint>
 
 <joint name="wheel_clamp_1_to_wheel_1" type="continuous">
-  <origin xyz="0.115 -0.134 -0.085" rpy="0 0 0"/>
+  <origin xyz="0.025 0.0 -0.085" rpy="0 0 0"/>
   <parent link="wheel_clamp_1_1"/>
   <child link="wheel_1_1"/>
   <axis xyz="1.0 0.0 0.0"/>
@@ -234,7 +234,7 @@
 </joint>
 
 <joint name="wheel_clamp_2_to_wheel_2" type="continuous">
-  <origin xyz="0.115 0.134 -0.085" rpy="0 0 0"/>
+  <origin xyz="0.025 0.0 -0.085" rpy="0 0 0"/>
   <parent link="wheel_clamp_2_1"/>
   <child link="wheel_2_1"/>
   <axis xyz="1.0 0.0 0.0"/>
@@ -253,14 +253,14 @@
 </joint>
 
 <joint name="wheel_clamp_3_to_wheel_3" type="continuous">
-  <origin xyz="0.115 0.134 -0.085" rpy="0 0 0"/>
+  <origin xyz="-0.025 0.0 -0.085" rpy="0 0 0"/>
   <parent link="wheel_clamp_3_1"/>
   <child link="wheel_3_1"/>
   <axis xyz="-1.0 0.0 -0.0"/>
 </joint>
 
 <joint name="wheel_clamp_4_to_wheel_4" type="continuous">
-  <origin xyz="0.115 -0.134 -0.085" rpy="0 0 0"/>
+  <origin xyz="-0.025 0.0 -0.085" rpy="0 0 0"/>
   <parent link="wheel_clamp_4_1"/>
   <child link="wheel_4_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
