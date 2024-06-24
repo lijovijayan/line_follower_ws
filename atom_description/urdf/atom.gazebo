@@ -21,6 +21,13 @@
   <self_collide>true</self_collide>
 </gazebo>
 
+<gazebo reference="wheel_1_1">
+  <material>${body_color}</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
 <gazebo reference="wheel_clamp_2_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
@@ -64,13 +71,6 @@
 </gazebo>
 
 <gazebo reference="depth_camera_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <self_collide>true</self_collide>
-</gazebo>
-
-<gazebo reference="wheel_1_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
