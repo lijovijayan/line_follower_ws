@@ -57,7 +57,7 @@
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black" />
   </visual>
   <collision>
     <origin xyz="-0.14 0.134 0.025" rpy="0 0 0"/>
@@ -99,7 +99,7 @@
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black" />
   </visual>
   <collision>
     <origin xyz="-0.14 -0.134 0.025" rpy="0 0 0"/>
@@ -162,7 +162,7 @@
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black" />
   </visual>
   <collision>
     <origin xyz="0.14 0.134 0.025" rpy="0 0 0"/>
@@ -183,7 +183,7 @@
     <geometry>
       <mesh filename="file://$(find atom_description)/meshes/wheel_4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black" />
   </visual>
   <collision>
     <origin xyz="0.14 -0.134 0.025" rpy="0 0 0"/>
