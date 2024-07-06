@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<robot name="atom" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:property name="wheel_separation" value="0.280"/>
+  <xacro:property name="wheel_diameter" value="0.100"/>
+
+  <gazebo>
+    <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <!-- Update rate in Hz -->
+      <update_rate>50</update_rate>
+
+      <!-- wheels -->
+      <right_joint>wheel_clamp_1_to_wheel_1</right_joint>
+      <left_joint>wheel_clamp_3_to_wheel_3</left_joint>
+
+      <!-- kinematics -->
+      <wheel_separation>0.280</wheel_separation>
+      <wheel_diameter>0.100</wheel_diameter>
+
+      <!-- limits -->
+      <!-- <max_wheel_torque>20</max_wheel_torque>
+      <max_wheel_acceleration>1.0</max_wheel_acceleration> -->
+
+      <!-- input -->
+      <command_topic>cmd_vel</command_topic>
+
+      <!-- output -->
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom</odometry_frame>
+
+      <robot_base_frame>base_link</robot_base_frame>
+
+
+    </plugin>
+  </gazebo>
+</robot>
