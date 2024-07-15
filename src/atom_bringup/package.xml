@@ -9,8 +9,9 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>ros_gz_bridge</depend>
-  <depend>ros_gz_sim</depend>
+  <!-- <depend>ros_gz_bridge</depend>
+  <depend>ros_gz_sim</depend> -->
+  <depend>gazebo_ros</depend>
   <depend>xacro</depend>
   <depend>rviz2</depend>
   <depend>robot_state_publisher</depend>

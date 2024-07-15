@@ -8,11 +8,6 @@
 <xacro:include filename="$(find atom_description)/urdf/plugins.xacro" />
 
 <link name="base_link">
-  <inertial>
-    <origin xyz="-1.0547369564692681e-07 0.004021237681352332 0.0412312225257285" rpy="0 0 0"/>
-    <mass value="8.373395552650207"/>
-    <inertia ixx="0.115141" iyy="0.045372" izz="0.151049" ixy="0.0" iyz="-0.001432" ixz="-0.0"/>
-  </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>

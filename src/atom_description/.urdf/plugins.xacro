@@ -13,8 +13,11 @@
       <right_joint>wheel_clamp_1_to_wheel_1</right_joint>
       <left_joint>wheel_clamp_3_to_wheel_3</left_joint>
 
+      <!-- <right_joint>wheel_clamp_2_to_wheel_2</right_joint>
+      <left_joint>wheel_clamp_4_to_wheel_4</left_joint> -->
+
       <!-- kinematics -->
-      <wheel_separation>0.280</wheel_separation>
+      <wheel_separation>0.340</wheel_separation>
       <wheel_diameter>0.100</wheel_diameter>
 
       <!-- limits -->

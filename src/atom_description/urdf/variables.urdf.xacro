@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<robot name="atom" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:property name="base_length" value="1.2" />
+    <xacro:property name="base_width" value="0.7" />
+    <xacro:property name="base_height" value="0.25" />
+
+    <xacro:property name="buffer_space_for_wheels" value="0.01" />
+    <xacro:property name="wheel_radius" value="0.13" />
+    <xacro:property name="wheel_length" value="0.075" />
+    <xacro:property name="wheel_separation" value="${base_width + 2 * buffer_space_for_wheels}" />
+    <xacro:property name="wheel_distance_from_base" value="${ wheel_radius - 0.05 }" />
+
+    <xacro:property name="base_footprint_to_base_link_distance" value="${wheel_distance_from_base + wheel_radius}" />
+
+
+    <xacro:property name="xyz_base_link_to_front_left_wheel" value="${ (base_length / 2) - wheel_radius } ${ (base_width / 2) + buffer_space_for_wheels } ${ -wheel_distance_from_base }" />
+    <xacro:property name="xyz_base_link_to_front_right_wheel" value="${ (base_length / 2) - wheel_radius } ${ -((base_width / 2) + buffer_space_for_wheels) } ${ -wheel_distance_from_base }" />
+
+    <xacro:property name="xyz_base_link_to_rear_left_wheel" value="${ -((base_length / 2) - wheel_radius) } ${ (base_width / 2) + buffer_space_for_wheels } ${ -wheel_distance_from_base }" />
+    <xacro:property name="xyz_base_link_to_rear_right_wheel" value="${ -((base_length / 2) - wheel_radius) } ${ -((base_width / 2) + buffer_space_for_wheels) } ${ -wheel_distance_from_base }" />
+</robot>
