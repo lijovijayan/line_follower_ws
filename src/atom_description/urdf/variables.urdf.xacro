@@ -13,6 +13,9 @@
 
     <xacro:property name="base_footprint_to_base_link_distance" value="${wheel_distance_from_base + wheel_radius}" />
 
+    <xacro:property name="camera_length" value="0.02" />
+    <xacro:property name="camera_width" value="0.10" />
+    <xacro:property name="camera_height" value="0.06" />
 
     <xacro:property name="xyz_base_link_to_front_left_wheel" value="${ (base_length / 2) - wheel_radius } ${ (base_width / 2) + buffer_space_for_wheels } ${ -wheel_distance_from_base }" />
     <xacro:property name="xyz_base_link_to_front_right_wheel" value="${ (base_length / 2) - wheel_radius } ${ -((base_width / 2) + buffer_space_for_wheels) } ${ -wheel_distance_from_base }" />

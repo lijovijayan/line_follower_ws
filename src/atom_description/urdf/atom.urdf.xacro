@@ -4,6 +4,7 @@
     <xacro:include filename="$(find atom_description)/urdf/variables.urdf.xacro" />
     <xacro:include filename="$(find atom_description)/urdf/common.urdf.xacro" />
     <xacro:include filename="$(find atom_description)/urdf/robot.urdf.xacro" />
+    <xacro:include filename="$(find atom_description)/urdf/camera.plugin.urdf.xacro" />
     <xacro:include filename="$(find atom_description)/urdf/atom.gazebo.urdf.xacro" />
     <xacro:include filename="$(find atom_description)/urdf/plugins.urdf.xacro" />
 </robot>

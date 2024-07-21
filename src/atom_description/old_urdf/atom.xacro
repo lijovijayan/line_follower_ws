@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
 <robot name="atom" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find atom_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find atom_description)/urdf/atom.trans" />
-<xacro:include filename="$(find atom_description)/urdf/atom.gazebo" />
-<!-- <xacro:include filename="$(find atom_description)/urdf/base_footprint.xacro" /> -->
-<xacro:include filename="$(find atom_description)/urdf/plugins.xacro" />
+<xacro:include filename="$(find atom_description)/old_urdf/materials.xacro" />
+<xacro:include filename="$(find atom_description)/old_urdf/atom.trans" />
+<xacro:include filename="$(find atom_description)/old_urdf/atom.gazebo" />
+<xacro:include filename="$(find atom_description)/old_urdf/base_footprint.xacro" />
+<xacro:include filename="$(find atom_description)/old_urdf/plugins.xacro" />
 
 <link name="base_link">
   <visual>
@@ -254,14 +254,14 @@
   <origin xyz="-0.025 0.0 -0.085" rpy="0 0 0"/>
   <parent link="wheel_clamp_3_1"/>
   <child link="wheel_3_1"/>
-  <axis xyz="-1.0 0.0 -0.0"/>
+  <axis xyz="1.0 0.0 0.0"/>
 </joint>
 
 <joint name="wheel_clamp_4_to_wheel_4" type="continuous">
   <origin xyz="-0.025 0.0 -0.085" rpy="0 0 0"/>
   <parent link="wheel_clamp_4_1"/>
   <child link="wheel_4_1"/>
-  <axis xyz="-1.0 0.0 0.0"/>
+  <axis xyz="1.0 0.0 0.0"/>
 </joint>
 
 <joint name="base_link_to_depth_camera" type="fixed">

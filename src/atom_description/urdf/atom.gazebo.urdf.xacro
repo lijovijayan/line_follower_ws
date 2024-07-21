@@ -15,4 +15,7 @@
     <gazebo reference="rear_right_wheel">
         <material>Gazebo/Black</material>
     </gazebo>
+    <gazebo reference="camera">
+        <material>Gazebo/Black</material>
+    </gazebo>
 </robot>

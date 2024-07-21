@@ -12,13 +12,13 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
     description_share_dir = get_package_share_directory('atom_description')
     worlds_share_dir = get_package_share_directory('atom_worlds')
-    # world_file_path = os.path.join(worlds_share_dir, 'worlds', 'line_follower.world')
-    world_file_path = os.path.join(worlds_share_dir, 'worlds', 'empty_world.world')
+    world_file_path = os.path.join(worlds_share_dir, 'worlds', 'line_follower.world')
 
-    # xacro_file = os.path.join(description_share_dir, 'urdf', 'atom.urdf.xacro')
-    xacro_file = os.path.join(description_share_dir, 'old_urdf', 'atom.xacro')
+    xacro_file = os.path.join(description_share_dir, 'urdf', 'atom.urdf.xacro')
     robot_description_config = xacro.process_file(xacro_file)
     robot_urdf = robot_description_config.toxml()
+
+    rviz_config_file = os.path.join(description_share_dir, 'config', 'display.rviz')
 
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
@@ -33,6 +33,14 @@ def generate_launch_description():
         package='joint_state_publisher',
         executable='joint_state_publisher',
         name='joint_state_publisher'
+    )
+
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config_file],
+        output='screen'
     )
     
     gazebo = IncludeLaunchDescription(
@@ -62,6 +70,7 @@ def generate_launch_description():
     return LaunchDescription([
         robot_state_publisher_node,
         joint_state_publisher_node,
+        rviz_node,
         gazebo,
         urdf_spawn_node
     ])

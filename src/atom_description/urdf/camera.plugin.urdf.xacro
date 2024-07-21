@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<robot name="atom" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <link name="camera">
+        <visual>
+            <geometry>
+                <box size="${camera_length} ${camera_width} ${camera_height}" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="black" />
+        </visual>
+        <xacro:cuboid_inertia m="0.1" l="${camera_length}"
+            w="${camera_width}" h="${camera_height}"
+            xyz="0 0 0" rpy="0 0 0" />
+        <collision>
+            <geometry>
+                <box size="${camera_length} ${camera_width} ${camera_height}" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </collision>
+    </link>
+
+    <joint name="base_link_to_camera" type="fixed">
+        <parent link="base_link" />
+        <child link="camera" />
+        <origin xyz="${base_length / 2} 0 ${base_height}" rpy="0 0 0" />
+    </joint>
+
+
+    <gazebo reference="camera">
+        <sensor name="camera_sensor" type="camera">
+            <camera name="camera_sensor">
+                <image>
+                    <width>1920</width>
+                    <height>1080</height>
+                    <!-- <format>R8G8B8</format> -->
+                </image>
+            </camera>
+            <pose>0 0 0 0 0 0</pose>
+            <visualize>true</visualize>
+            <update_rate>30.0</update_rate>
+            <!-- <camera></camera> -->
+
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <frame_name>primary_camera_frame</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+</robot>

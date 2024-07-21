@@ -1,0 +1,13 @@
+material Path
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture path.png
+      }
+    }
+  }
+}
