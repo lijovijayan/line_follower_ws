@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot name="line_follower" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <link name="psudo_camera">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </visual>
+    </link>
+
+    <joint name="depth_camera_to_psudo_camera" type="fixed">
+        <parent link="depth_camera_1" />
+        <child link="psudo_camera" />
+        <origin xyz="0 0.03 0.015" rpy="0 0 1.5708" />
+    </joint>
+
+
+    <gazebo reference="psudo_camera">
+        <sensor name="camera_sensor" type="camera">
+            <camera name="camera_sensor">
+                <image>
+                    <width>1920</width>
+                    <height>1080</height>
+                    <!-- <format>R8G8B8</format> -->
+                </image>
+            </camera>
+            <pose>0 0 0 0 0 0</pose>
+            <visualize>true</visualize>
+            <update_rate>30.0</update_rate>
+            <!-- <camera></camera> -->
+
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <frame_name>primary_camera_frame</frame_name>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+</robot>
