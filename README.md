@@ -9,7 +9,8 @@ This project is a simple ROS2 implementation of a Gazebo-simulated robot that fo
 - **Computer Vision:** Employs Python-based computer vision algorithms to detect and follow lines.
 
 ## Prerequisites
-- ROS2 Foxy Fitzroy or newer
+- Ubuntu 22.04 LTS
+- ROS2 Humble
 - Gazebo simulator
 - Python 3.6 or newer
 - OpenCV for Python
@@ -17,8 +18,7 @@ This project is a simple ROS2 implementation of a Gazebo-simulated robot that fo
 ## Installation
 1. **Install ROS2:** Follow the official ROS2 documentation to install ROS2 on your system.
 2. **Install Gazebo:** Ensure Gazebo is installed and properly configured with ROS2.
-3. **Clone the Repository:** Clone this repository into your ROS2 workspace's `src` directory.
-4. **Install Dependencies:** Run `rosdep install --from-paths src --ignore-src -r -y` in your workspace directory to install required dependencies.
+3. **Clone the Repository:** Clone this repository into your system.
 5. **Build the Workspace:** Use `colcon build` to build your ROS2 workspace.
 
 ## Running the Simulation
