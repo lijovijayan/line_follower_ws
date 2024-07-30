@@ -14,7 +14,7 @@ def generate_launch_description():
     worlds_share_dir = get_package_share_directory('line_follower_worlds')
     world_file_path = os.path.join(worlds_share_dir, 'worlds', 'line_follower.world')
 
-    xacro_file = os.path.join(description_share_dir, 'urdf', 'line_follower.urdf.xacro')
+    xacro_file = os.path.join(description_share_dir, 'sample_urdf', 'line_follower.sample_urdf.xacro')
     robot_description_config = xacro.process_file(xacro_file)
     robot_urdf = robot_description_config.toxml()
 

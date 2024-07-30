@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             "line_follower = line_follower_controller.line_follower_node:main",
+            'image_recorder = line_follower_controller.image_recorder_node:main'
         ],
     },
 )

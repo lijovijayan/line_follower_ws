@@ -15,8 +15,8 @@ def generate_launch_description():
     world_file_path = os.path.join(worlds_share_dir, 'worlds', 'line_follower.world')
     # world_file_path = os.path.join(worlds_share_dir, 'worlds', 'empty_world.world')
 
-    # xacro_file = os.path.join(description_share_dir, 'urdf', 'line_follower.urdf.xacro')
-    xacro_file = os.path.join(description_share_dir, 'old_urdf', 'line_follower.xacro')
+    # xacro_file = os.path.join(description_share_dir, 'sample_urdf', 'line_follower.sample_urdf.xacro')
+    xacro_file = os.path.join(description_share_dir, 'robot_urdf', 'line_follower.xacro')
     robot_description_config = xacro.process_file(xacro_file)
     robot_urdf = robot_description_config.toxml()
 
@@ -56,11 +56,11 @@ def generate_launch_description():
             '-entity', 'line_follower',
             '-topic', 'robot_description',
             '-x', '-17.0',
-            '-y', '18.3',
+            '-y', '17.765076',
             '-z', '0.0',
             '-R', '0.0',
             '-P', '0.0',
-            '-Y', '3.141590'
+            '-Y', '-1.5708'
         ],
         output='screen'
     )

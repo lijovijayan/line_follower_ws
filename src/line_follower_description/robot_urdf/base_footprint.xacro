@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<robot name="line_follower" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="base_footprint" />
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint" />
+    <child link="base_link" />
+    <origin xyz="0 0 ${0.023881 + 0.050}" rpy="0 0 4.71239" />
+  </joint>
+
+  <gazebo reference="base_footprint">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
+</robot>

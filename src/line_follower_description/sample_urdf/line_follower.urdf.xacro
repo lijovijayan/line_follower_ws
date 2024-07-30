@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<robot name="line_follower" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="$(find line_follower_description)/sample_urdf/variables.sample_urdf.xacro" />
+    <xacro:include filename="$(find line_follower_description)/sample_urdf/common.sample_urdf.xacro" />
+    <xacro:include filename="$(find line_follower_description)/sample_urdf/robot.sample_urdf.xacro" />
+    <xacro:include filename="$(find line_follower_description)/sample_urdf/camera.plugin.sample_urdf.xacro" />
+    <xacro:include filename="$(find line_follower_description)/sample_urdf/line_follower.gazebo.sample_urdf.xacro" />
+    <xacro:include filename="$(find line_follower_description)/sample_urdf/plugins.sample_urdf.xacro" />
+</robot>

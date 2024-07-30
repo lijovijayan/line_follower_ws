@@ -76,7 +76,6 @@
           <!-- <static>true</static> -->
           <min_dist>1</min_dist>
           <max_dist>2.5</max_dist>
-          <rpy>-0.000001 0.205670 -1.214451</rpy>
         </track_visual>
       </camera>
     </gui>

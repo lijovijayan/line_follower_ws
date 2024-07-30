@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<robot name="line_follower" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:property name="body_color" value="Gazebo/FlatBlack" />
+  <xacro:property name="wheel_color" value="Gazebo/White" />
+  <xacro:property name="clamp_color" value="Gazebo/Grey" />
+
+  <gazebo reference="base_link">
+    <material>${body_color}</material>
+    <self_collide>true</self_collide>
+    <gravity>true</gravity>
+  </gazebo>
+
+  <gazebo reference="wheel_clamp_1_1">
+    <material>${clamp_color}</material>
+    <self_collide>true</self_collide>
+  </gazebo>
+
+  <gazebo reference="wheel_1_1">
+    <material>${wheel_color}</material>
+    <self_collide>true</self_collide>
+  </gazebo>
+
+  <gazebo reference="wheel_clamp_2_1">
+    <material>${clamp_color}</material>
+    <self_collide>true</self_collide>
+  </gazebo>
+
+  <gazebo reference="wheel_2_1">
+    <material>${wheel_color}</material>
+    <self_collide>true</self_collide>
+  </gazebo>
+
+  <gazebo reference="wheel_clamp_3_1">
+    <material>${clamp_color}</material>
+    <self_collide>true</self_collide>
+  </gazebo>
+
+  <gazebo reference="wheel_clamp_4_1">
+    <material>${clamp_color}</material>
+    <self_collide>true</self_collide>
+  </gazebo>
+
+  <gazebo reference="wheel_3_1">
+    <material>${wheel_color}</material>
+    <self_collide>true</self_collide>
+  </gazebo>
+
+  <gazebo reference="wheel_4_1">
+    <material>${wheel_color}</material>
+    <self_collide>true</self_collide>
+  </gazebo>
+
+  <gazebo reference="depth_camera_1">
+    <material>${clamp_color}</material>
+    <self_collide>true</self_collide>
+  </gazebo>
+
+</robot>

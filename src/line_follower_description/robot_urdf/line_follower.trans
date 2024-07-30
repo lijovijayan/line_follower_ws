@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<robot name="line_follower" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <transmission name="wheel_clamp_1_to_wheel_1_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_clamp_1_to_wheel_1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_clamp_1_to_wheel_1_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="wheel_clamp_2_to_wheel_2_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_clamp_2_to_wheel_2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_clamp_2_to_wheel_2_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="wheel_clamp_3_to_wheel_3_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_clamp_3_to_wheel_3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_clamp_3_to_wheel_3_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="wheel_clamp_4_to_wheel_4_tran">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_clamp_4_to_wheel_4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wheel_clamp_4_to_wheel_4_actr">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+</robot>

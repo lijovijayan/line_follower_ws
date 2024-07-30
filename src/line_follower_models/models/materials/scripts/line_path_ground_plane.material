@@ -1,0 +1,22 @@
+material RubberWheel
+{
+    technique
+    {
+        pass
+        {
+            ambient 0.1 0.1 0.1 1.0
+            diffuse 0.2 0.2 0.2 1.0
+            specular 0.01 0.01 0.01 1.0 0.5
+
+            texture_unit
+            {
+                texture ../textures/path_2.png
+                tex_address_mode wrap
+                filtering bilinear
+                max_anisotropy 16
+                mipmap_bias -1.0
+                scale 1.0 1.0  // Adjust scaling if needed
+            }
+        }
+    }
+}
